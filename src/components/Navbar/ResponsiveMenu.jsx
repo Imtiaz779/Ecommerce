@@ -39,8 +39,8 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
           </ul>
         </nav>
       </div>
-      <div className="">
-        <h1>Clothify </h1>
+      <div className="font-mono text-xl">
+        <h1 className="hover:scale-105 transition-all duration-300">Clothify Shopping</h1>
       </div>
     </div>
   );

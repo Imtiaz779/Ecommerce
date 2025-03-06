@@ -7,31 +7,37 @@ import Womens from './Pages/Womens'
 import Kids from './Pages/Kids'
 import Login from './Pages/Login'
 import Cart from './Pages/Cart'
+import Footer from './components/Footer'
+import SingleProduct from './components/SingleProduct'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<><Navbar/><Home/></>
+    element:<><Navbar/><Home/> <Footer/></>
   },
   {
     path: "/mens",
-    element:<><Navbar/><Mens/></>
+    element:<><Navbar/><Mens/> <Footer/></>
   },
   {
     path: "/womens",
-    element:<><Navbar/><Womens/></>
+    element:<><Navbar/><Womens/> <Footer/></>
   },
   {
     path: "/kids",
-    element:<><Navbar/><Kids/></>
+    element:<><Navbar/><Kids/> <Footer/></>
   },
   {
     path: "/login",
-    element: <><Navbar/><Login/></>
+    element: <><Navbar/><Login/> <Footer/></>
   },
   {
     path: "/cart",
-    element: <><Navbar/><Cart/></>
+    element: <><Navbar/><Cart/> <Footer/></>
+  },
+  {
+    path: "/products/:productId",
+    element: <><Navbar/><SingleProduct/> <Footer/></>
   }
 ])
 
