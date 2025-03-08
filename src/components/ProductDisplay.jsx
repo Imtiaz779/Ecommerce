@@ -1,7 +1,7 @@
 import { Star } from 'lucide-react'
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { Shopcontext } from '../Context/ShopContext'
+import { Shopcontext } from '../context/ShopContext'
 
 const ProductDisplay = (props) => {
 
