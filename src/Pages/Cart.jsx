@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { Shopcontext } from '../Context/ShopContext'
+import { Shopcontext } from '../context/ShopContext'
 import EmptyCart from '../assets/EmptyCart.png'
 import { X } from 'lucide-react'
 import { Link } from 'react-router-dom'
