@@ -10,7 +10,9 @@ const ProductDisplay = (props) => {
       }
 
     const {product} = props;
-    const randomRating = getRandomInt(10,1500);
+    const {addToCart} = useContext(Shopcontext);
+
+    const randomRating = getRandomInt(100,500);
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 my-20 md:gap-10 px-6 md:px-0'>
         <div className='flex md:1/2 gap-5'>
@@ -53,12 +55,13 @@ const ProductDisplay = (props) => {
             <div className='border bg-gray-200 p-4'>XXL</div>
         </div>
       </div>
-      <Link>
-      <button className='bg-red-500 text-white px-6 py-3 my-4 w-max'>
-        Add to Cart
+      <Link to='/cart'>
+      <button onClick={()=>addToCart(product.id)} className='bg-red-500 text-white px-6 py-3 my-4 w-max'>
+        ADD TO CART
       </button>
       </Link>
-      <p><span>Category</span></p>
+      <p><span className='font-semibold'>Category:</span> Women, T-shirt Crop top</p>
+      <p><span className='font-semibold:'>Tags</span> Modern , Latest</p>
         
         </div>
     </div>
