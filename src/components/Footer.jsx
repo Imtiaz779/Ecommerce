@@ -33,7 +33,7 @@ const Footer = () => {
             {/* Social media link  */}
             <div className='mb-6 md:mb-0'>
                 <h3 className=' text-xl font-semibold'>Follow Us</h3>
-                <div className='flex flex-col space-y-4 mt-4'>
+                <div className='flex  space-x-5 mt-4'>
                     <FaFacebook/>
                     <FaInstagram/>
                     <FaTwitterSquare/>
